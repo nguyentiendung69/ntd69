@@ -1,0 +1,72 @@
+:root{
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color:#333;
+}
+* {
+    box-sizing: inherit;
+}
+html{
+    font-size: 100%;
+    line-height: 1.6rem;
+    font-family: fa5-proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+.grid{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.grid__full-grid{
+    width: 100%;
+}
+.grid__grow{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* MODAL */
+.modalheader1,
+.modalheader{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(0, 0, 0, 0.4);
+    z-index: 2;
+}
+.open{
+    display: flex;
+}
+.modal__overlay{
+    width: calc(100%/3);
+    margin: auto ;
+    background-color: white;
+    border-radius: 3px;
+    position: relative;
+}
+.modal__body{
+    padding: 22px 30px;
+}
+.modal__body .close1,
+.modal__body .close{
+    position: absolute;
+    right: -10px;
+    top: -9px;
+    border-radius: 50%;
+    background-color:#ccc;
+    display: flex;
+    justify-content: center;
+}
+.close1 >i,
+.close >i{
+    font-size: 30px;
+    color:rgb(0, 0, 0, 0.4);
+}
+.modal__body .close1:hover i,
+.modal__body .close:hover i{
+    color: red;
+    cursor: pointer;
+}
+
